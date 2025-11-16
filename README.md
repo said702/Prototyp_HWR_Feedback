@@ -77,7 +77,7 @@ While the prototype is running and the camera window is active, you can control 
 | **ENTER** | Start the handwriting recognition and feedback process |
 | **s**     | Switch to *Spelling Feedback* mode (highlight character differences) |
 | **t**     | Switch to *Translation Feedback* mode (translate words from English to German) |
-| **o**     | Show *Original Words* (recognized words without feedback coloring) |
+| **o**     | Show *Original Words* (display the recognized words without feedback) |
 | **x**     | Increase feedback font size |
 | **y**     | Decrease feedback font size |
 | **n**     | Reset the prototype (clear internal state) |
