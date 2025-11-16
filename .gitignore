@@ -1,0 +1,6 @@
+Results/
+__pycache__/
+lmdb_dataset
+extracted_bboxes_for_prediction
+Extraction_Model/AttentionHTR.pth
+

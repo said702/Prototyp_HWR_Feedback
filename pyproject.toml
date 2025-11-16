@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "feedbackmapper"
+version = "0.1.0"
+description = ""
+package-mode = false
+authors = ["Said Yasin <said_yasin1234@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+regex = "^2024.11.6"
+httpx = ">=0.23.0,<0.24.0" 
+translator = "0.0.9"
+opencv-python = "4.10.0.84"
+google-trans-new = "1.1.9"
+pyspellchecker = "0.8.1"
+ultralytics  = "8.3.35"
+protobuf = "3.20.*"
+deep-translator = "1.11.4"
+torchvision = " 0.20.1"
+nltk = "^3.9.1"
+lmdb = "^1.5.1"
+pillow = "^10.4.0"
+natsort = "^8.4.0"
+six = "^1.16.0"
+requests = "^2.32.3"
+fire = "^0.7.0"
+opencv-contrib-python = "^4.10.0.84"
+fvcore = "^0.1.5.post20221221"
+cloudpickle = "^3.1.1"
+omegaconf = "^2.3.0"
+pycocotools = "^2.0.8"
+gdown = "^5.2.0"
+
+
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
