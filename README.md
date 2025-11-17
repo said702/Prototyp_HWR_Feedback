@@ -83,3 +83,6 @@ While the prototype is running and the camera window is active, you can control 
 | **n**     | Reset the prototype (clear internal state) |
 | **q**     | Quit the program |
 | **h**     | Show/Hide the on-screen help legend in the camera image |
+
+⚠️ **Note:** If the keyboard shortcuts do not work, click once inside the camera window to give it focus.
+
