@@ -222,6 +222,9 @@ def run_hwr_and_feedback(bbs_yolo11):
 cap = cv2.VideoCapture(camera_id)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+cv2.namedWindow("Prototype", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Prototype", 1280, 720)
+
 
 if not cap.isOpened():
     print(f"Error: Could not open camera with ID {camera_id}.")

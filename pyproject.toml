@@ -7,7 +7,7 @@ authors = ["Said Yasin <said_yasin1234@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11.*"
+python = "3.11.9"
 regex = "^2024.11.6"
 httpx = ">=0.23.0,<0.24.0" 
 translator = "0.0.9"

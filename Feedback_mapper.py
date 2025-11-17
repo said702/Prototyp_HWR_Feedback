@@ -89,32 +89,33 @@ def process_frame(frame, bbs,ocr_running,Feedback_running,Feedback_done):
     return frame_copy
 
 def draw_legend(frame):
-    # Help text list (top → bottom)
     legend = [
-    "h - Show/Hide Help",
-    "ENTER - Start Feedback Process",
-    "s - Switch to Spelling Feedback",
-    "t - Switch to Translation Feedback",
-    "o - Switch to Original Words",
-    "x - Increase Font Size",
-    "y - Decrease Font Size",
-    "n - Reset Program",
-    "q - Quit Program"
+        "h - Show/Hide Help",
+        "ENTER - Start Feedback Process",
+        "s - Switch to Spelling Feedback",
+        "t - Switch to Translation Feedback",
+        "o - Switch to Original Words",
+        "x - Increase Font Size",
+        "y - Decrease Font Size",
+        "n - Reset Program",
+        "q - Quit Program"
     ]
-
 
     font = cv2.FONT_HERSHEY_SIMPLEX
     font_scale = 0.55
     thickness = 1
     color = (0, 255, 255)  # Yellow
 
-    x_offset = 20        # left margin
-    y_start = 120        # <--- moved further down to avoid channel text
-    line_height = 22     # distance between each help line
+    x_offset = 20
+    line_height = 22
 
-    # Draw each help line at the top-left, positioned lower
-    for i, text in enumerate(legend):
-        y = y_start + i * line_height
+    # Start drawing from bottom-left
+    # height of the frame - small margin
+    y_base = frame.shape[0] - 20
+
+    # Draw from bottom to top
+    for i, text in enumerate(reversed(legend)):
+        y = y_base - i * line_height
         cv2.putText(
             frame,
             text,
@@ -125,6 +126,7 @@ def draw_legend(frame):
             thickness,
             cv2.LINE_AA
         )
+
 
 
 def draw_process_text(frame,text,font,font_scale,thickness):
