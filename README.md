@@ -35,38 +35,24 @@ This will:
 - install all required packages (OpenCV, Ultralytics, Torch, Pillow, gdown, etc.)  
 - set everything up for running the prototype
 
-### Starting the Prototype
-
-To start the system, run in the project directory:
-
-```bash
-poetry run python Main.py
-```
-
-A window will appear showing the live camera feed.
 
 
-### Camera Selection
+## Starting the Prototype
 
-If you have multiple cameras (webcam + document camera), you can select which one to use by setting the `camera_id` in `Main.py`:
+Start the application using:
+  ```bash
+   poetry run python main.py --camera <index>
+   ```
+  
+### Which camera index should you use?
 
-```python
-camera_id = 0
-cap = cv2.VideoCapture(camera_id)
-```
+- If your laptop has an internal webcam AND you plug in a USB/document camera:
+    → Use --camera 1
 
-Typical IDs:
+- If you only use one external camera (no internal webcam active):
+    → Use --camera 0
 
-- `0` → built-in laptop camera  
-- `1` → USB/document camera  
-- `2`, `3`, `4`, ... → additional cameras  
-
-If the wrong camera shows up or the screen is black, change the `camera_id` value, save the file, and restart with:
-
-```bash
-poetry run python Main.py
-```
-
+------------------------------------------------------------
 
 ### Keyboard Controls
 
