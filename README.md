@@ -13,6 +13,13 @@ The system combines:
     https://drive.google.com/drive/folders/1RBWJ9TkjI8hG0BIBjJNeZLRcEysFBYds?usp=sharing
 
 
+## Requirements
+
+- Python 3.11.9
+- Camera device
+- Internet connection on first run only (~200 MB model download)
+
+
 ### Installation & Dependencies
 
 This project uses **Poetry** to manage dependencies and virtual environments.
