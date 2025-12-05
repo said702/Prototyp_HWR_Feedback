@@ -11,6 +11,8 @@ import gdown
 import argparse
 import ctypes 
 import sys
+from screeninfo import get_monitors
+
 
 
 # -------------------------------------------------------------------------
@@ -190,9 +192,9 @@ def run_hwr_and_feedback(bbs_yolo11):
 # Screen + Camera
 # -------------------------------------------------------------------------
 
-user32 = ctypes.windll.user32
-screen_width = user32.GetSystemMetrics(0)
-screen_height = user32.GetSystemMetrics(1)
+m = get_monitors()[0]
+screen_width  = m.width
+screen_height = m.height
 
 cap = cv2.VideoCapture(camera_index)
 
