@@ -15,8 +15,8 @@ The system combines:
 
 ## Requirements
 
-- Python 3.11.9
-- Camera device
+- Python 3.11 (tested with 3.11.9)
+- Camera device with system-level access
 - Internet connection on first run only (~200 MB model download)
 
 
