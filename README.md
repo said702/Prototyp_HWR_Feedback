@@ -82,3 +82,24 @@ While the prototype is running and the camera window is active, you can control 
 
 ⚠️ **Note:** If the keyboard shortcuts do not work, click once inside the camera window to give it focus.
 
+## Citation
+
+If you use this repository or the accompanying data, please cite the LTC 2025 paper.
+```bibtex
+@incollection{Yasin2025,
+  author    = {Yasin, Said and Zesch, Torsten},
+  title     = {Show, Don't Tell -- Providing Visual Error Feedback for Handwritten Documents},
+  booktitle = {Human Language Technology as a Challenge for Computer Science and Linguistics -- 2025},
+  editor    = {Vetulani, Zygmunt and Paroubek, Patrick and Kardava, Irakli},
+  pages     = {99--103},
+  year      = {2025},
+  address   = {Poznań},
+  publisher = {Wydawnictwo Naukowe Uniwersytetu im. Adama Mickiewicza},
+  doi       = {10.14746/amup.9788323245414.18}
+}
+
+```
+
+
+
+
