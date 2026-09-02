@@ -1,6 +1,6 @@
 # Handwriting Feedback Demo (LTC 2025)
 
-This repository contains the official demo prototype accompanying our LTC 2025 paper, “Show, Don't Tell -- Providing Visual Error Feedback for Handwritten Documents.” It provides a real-time system for hieroglyph classification and translation using a live camera feed.
+This repository contains the official demo prototype accompanying our LTC 2025 paper, “Show, Don't Tell -- Providing Visual Error Feedback for Handwritten Documents.” 
 
 ### Handwriting Feedback Prototype
 
